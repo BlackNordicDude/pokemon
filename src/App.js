@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import PokeCard from './components/container';
+import { Container } from '@mui/material';
 
 function App() {
+
+  const [pokemons, setPokemons] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get('https://pokeapi.co/api/v2/pokemon/?limit=10')
+      .then(res => res.data.results)
+      .then(data => {
+        setPokemons(data);
+      })
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container sx={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      bgcolor: '#131313'
+    }}>
+       {pokemons && <PokeCard pokemons={pokemons}/>}
+    </Container>    
   );
 }
 
