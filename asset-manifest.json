@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/BlackNordicDude/pokemon/static/js/main.9cb31a2d.js",
-    "index.html": "/BlackNordicDude/pokemon/index.html",
-    "main.9cb31a2d.js.map": "/BlackNordicDude/pokemon/static/js/main.9cb31a2d.js.map"
+    "main.js": "/pokemon/static/js/main.9cb31a2d.js",
+    "index.html": "/pokemon/index.html",
+    "main.9cb31a2d.js.map": "/pokemon/static/js/main.9cb31a2d.js.map"
   },
   "entrypoints": [
     "static/js/main.9cb31a2d.js"
