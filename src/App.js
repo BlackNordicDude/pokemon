@@ -22,7 +22,7 @@ function App() {
       alignItems: 'center',
       justifyContent: 'center',
       height: '100vh',
-      bgcolor: '#131313'
+      px: { sm: '150px'},
     }}>
        {pokemons && <PokeCard pokemons={pokemons}/>}
     </Container>    

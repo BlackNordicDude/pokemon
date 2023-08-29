@@ -19,6 +19,7 @@ const PokemonCard = ({pokemon}) => {
         <>
             <Typography component='h1' sx={{
                 fontSize: 48,
+                lineHeight: '100%',
             }}>
                 {pokemon[0].toUpperCase() + pokemon.slice(1)}
             </Typography>
@@ -36,6 +37,7 @@ const PokemonCard = ({pokemon}) => {
                 src={currentPokemon.sprites.front_default}
                 />
                 <Typography component='p'>
+                    Снялся в {currentPokemon.weight} сериях <br/>
                     id: {currentPokemon.id} <br/>
                     height: {currentPokemon.height} <br/>
                     attack: {currentPokemon.stats[1].base_stat}
