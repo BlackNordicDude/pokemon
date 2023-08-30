@@ -37,7 +37,7 @@ const PokemonCard = ({pokemon}) => {
                 src={currentPokemon.sprites.front_default}
                 />
                 <Typography component='p'>
-                    Снялся в {currentPokemon.weight} сериях <br/>
+                    Снялся в {currentPokemon.moves.length} сериях <br/>
                     id: {currentPokemon.id} <br/>
                     height: {currentPokemon.height} <br/>
                     attack: {currentPokemon.stats[1].base_stat}
