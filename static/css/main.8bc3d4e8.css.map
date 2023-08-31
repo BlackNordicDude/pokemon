@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.8bc3d4e8.css","mappings":"kHAEA,KACI,wBACJ","sources":["index.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');\n\nbody {\n    background-color: #131313;\n}"],"names":[],"sourceRoot":""}
