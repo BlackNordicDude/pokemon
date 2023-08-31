@@ -30,6 +30,8 @@ const PokeCard = ({pokemons}) => {
                                 bgcolor: '#1986EC',
                                 color: '#ffffff',
                                 fontSize: 20,
+                                fontWeight: 500,
+                                fontFamily: 'Raleway',
                                 mr: '6px',
                                 mb: '10px',
                                 py: '30px',

@@ -13,13 +13,13 @@ const PokemonCard = ({pokemon}) => {
             .then(res => setCurrentPokemon(res.data))
     }, [pokemon])
 
-    
-
     return (
         <>
             <Typography component='h1' sx={{
                 fontSize: 48,
                 lineHeight: '100%',
+                fontFamily: 'Raleway',
+                fontWeight: 700,
             }}>
                 {pokemon[0].toUpperCase() + pokemon.slice(1)}
             </Typography>
@@ -36,7 +36,10 @@ const PokemonCard = ({pokemon}) => {
                 alt={currentPokemon.name}
                 src={currentPokemon.sprites.front_default}
                 />
-                <Typography component='p'>
+                <Typography component='p' sx={{
+                  fontFamily: 'Raleway',
+                  fontWeight: 500,
+                }}>
                     Снялся в {currentPokemon.moves.length} сериях <br/>
                     id: {currentPokemon.id} <br/>
                     height: {currentPokemon.height} <br/>
